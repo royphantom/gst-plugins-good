@@ -297,7 +297,7 @@ enum
   LAST_SIGNAL
 };
 
-#define DEFAULT_LATENCY_MS           200
+#define DEFAULT_LATENCY_MS           0
 #define DEFAULT_DROP_ON_LATENCY      FALSE
 #define DEFAULT_SDES                 NULL
 #define DEFAULT_DO_LOST              FALSE
@@ -2708,7 +2708,7 @@ gst_rtp_bin_class_init (GstRtpBinClass * klass)
 
   gst_element_class_set_static_metadata (gstelement_class, "RTP Bin",
       "Filter/Network/RTP",
-      "Real-Time Transport Protocol bin",
+      "Real-Time Transport Protocol bin. (Roy touched me)",
       "Wim Taymans <wim.taymans@gmail.com>");
 
   gstbin_class->handle_message = GST_DEBUG_FUNCPTR (gst_rtp_bin_handle_message);

@@ -128,7 +128,7 @@ enum
   LAST_SIGNAL
 };
 
-#define DEFAULT_LATENCY_MS          200
+#define DEFAULT_LATENCY_MS          0
 #define DEFAULT_DROP_ON_LATENCY     FALSE
 #define DEFAULT_TS_OFFSET           0
 #define DEFAULT_MAX_TS_OFFSET_ADJUSTMENT 0
@@ -978,7 +978,7 @@ gst_rtp_jitter_buffer_class_init (GstRtpJitterBufferClass * klass)
 
   gst_element_class_set_static_metadata (gstelement_class,
       "RTP packet jitter-buffer", "Filter/Network/RTP",
-      "A buffer that deals with network jitter and other transmission faults",
+      "A buffer that deals with network jitter and other transmission faults (Roy touched me)",
       "Philippe Kalaf <philippe.kalaf@collabora.co.uk>, "
       "Wim Taymans <wim.taymans@gmail.com>");
 
